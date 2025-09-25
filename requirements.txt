@@ -1,1 +1,44 @@
+# Requirements for Payma System
+# เวอร์ชันไลบรารีที่รองรับ Python 3.6+
 
+# สำหรับการสร้าง QR Code
+qrcode>=7.4.2
+
+# สำหรับการประมวลผลภาพและแสดงผล
+Pillow>=10.0.0
+
+# สำหรับการสร้าง PDF และใบเสร็จ
+reportlab>=4.0.4
+
+# ไลบรารีมาตรฐานของ Python (ไม่ต้องติดตั้งเพิ่ม)
+# tkinter - สำหรับ GUI (มากับ Python)
+# datetime - สำหรับจัดการวันที่และเวลา
+# json - สำหรับจัดการข้อมูล
+# os - สำหรับทำงานกับระบบไฟล์
+# random - สำหรับสร้างตัวเลขสุ่ม
+
+หากต้องการเวอร์ชันที่เฉพาะเจาะจงมากขึ้น:
+qrcode==7.4.2
+Pillow==10.0.1
+reportlab==4.0.4
+
+
+สำหรับผู้ใช้ที่อาจมีปัญหาในการติดตั้ง
+# Requirements for Payma System - Compatible Version
+qrcode>=7.3
+Pillow>=9.5.0
+reportlab>=3.6.12
+
+
+เปิด Command Prompt หรือ Terminal แล้วรัน:
+
+# ติดตั้งทั้งหมด
+pip install -r requirements.txt
+
+# หรือติดตั้งทีละตัว
+pip install qrcode
+pip install Pillow
+pip install reportlab
+
+ตรวจสอบการติดตั้ง
+pip list | grep -E "(qrcode|Pillow|reportlab)"
